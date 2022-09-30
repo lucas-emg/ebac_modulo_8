@@ -6,25 +6,22 @@ Quero fazer o login (autenticação) na plataforma
 Para visualizar meus pedidos
 
 Contexto:
-Dado que o usuário navegue para a plataforma da EBAC-SHOP
+Dado que eu navegue para a plataforma da EBAC-SHOP
 E clique em Login
 
 Cenário: Email invalido
-Quando o usuário entrar o email "jjoao@ebac.com"
-E a senha "senha123"
-Então ele deve receber uma mensagem de alerta dizendo "Usuário
+Quando eu entrar o email "jjoao@ebac.com" e a senha "senha123"
+Então eu devo receber uma mensagem de alerta dizendo "Usuário
 ou senha inválidos"
 
 Cenário: Senha inválida
-Quando o usuário entrar o email "joao@ebac.com"
-E a senha "senha321"
-Então ele deve receber uma mensagem de alerta dizendo "Usuário
+Quando eu entrar o email "joao@ebac.com" e a senha "senha321"
+Então eu devo receber uma mensagem de alerta dizendo "Usuário
 ou senha inválidos"
 
 Cenário: Cadastro com credenciais corretas
-Quando o usuário entrar o email <email_usuario>
-E a senha <senha_usuario>
-Então ele deve ser direcionado a tela de checkout
+Quando eu entrar o email <email_usuario> e a senha <senha_usuario>
+Então eu devo ser direcionado a tela de checkout
 
 Exemplos:
 |email_usuario                  |senha_usuario      |

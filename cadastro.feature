@@ -6,27 +6,20 @@ Quero fazer concluir meu cadastro
 Para finalizar minha compra
 
 Contexto:
-Dado que o cliente acessou o portal da EBAC
-E clicou em Cadastrar
+Dado que eu acessar o portal da EBAC
+E clicar em Cadastrar
 
 Cenário: Cadastro com campos vazios:
 Quando eu deixar de preencher um campo obrigatório
 Então deve aparecer uma mensagem: "Preencha todos os campos obrigatórios"
 
 Cenário: Cadastro com email em formato incorreto:
-Quando o cliente não preencher algum dos campos obrigatórios
-Então ele deve receber uma mesagem que o email não está no formato correto
+Quando eu não preencher algum dos campos obrigatórios
+Então eu devo receber uma mesagem que o email não está no formato correto
 
 Cenário: Cadastro com sucesso:
-Quando o cliente preencher o Nome como <nome>
-E preencher o campo do Sobrenome como <sobrenome>
-E preencher o campo do País como <pais>
-E preencher o campo do Endereço como <endereco>
-E preencher o campo do Cidade como <cidade>
-E preencher o campo do CEP como <cep>
-E preencher o campo do Telefone como <telefone>
-E preencher o campo do Email como <email>
-Então O usuário deve ser levado para o carrinho para finalizar a compra
+Quando eu preencher o <nome>, <sobrenome>, <pais>, <endereco>, <cidade>, <cep>, <telefone> e <email>,
+Então devo ser levado para o carrinho para finalizar a compra
 
 |nome         |sobrenome        |pais       |endereco                  |cidade           |cep        |telefone      |email                          |
 |Jonas        |Silva            |Brasil     |Rua José Campos 22        |São Paulo        |99999-9    |19 990000000  |jonas_2009@email.com           |
